@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { WEDDING_DATA } from "@/data/wedding";
 import { useMusicPlayer } from "./MusicPlayer";
-import { Music, Pause, Phone, Code, Menu, X, Heart, RotateCcw } from "lucide-react";
+import { Music, Pause, Phone, Menu, X, Heart, RotateCcw } from "lucide-react";
 
 interface AppTopBarProps {
   onReplayInvitation?: () => void;
@@ -118,19 +118,6 @@ export const AppTopBar: React.FC<AppTopBarProps> = ({ onReplayInvitation }) => {
                 >
                   <Phone className="w-4 h-4 text-wedding-gold" />
                   <span>Contact &amp; Assistance</span>
-                </Link>
-
-                <Link
-                  href="/owner"
-                  onClick={() => setMenuOpen(false)}
-                  className={`flex items-center gap-3 p-3 rounded-xl border transition-all text-xs font-serif ${
-                    pathname === "/owner"
-                      ? "bg-wedding-maroon border-wedding-gold text-wedding-gold-light font-bold shadow-gold"
-                      : "bg-white/5 border-wedding-gold/20 text-wedding-cream/80 hover:bg-wedding-gold/15 hover:text-wedding-gold"
-                  }`}
-                >
-                  <Code className="w-4 h-4 text-wedding-gold" />
-                  <span>Owner of Application</span>
                 </Link>
 
                 <button

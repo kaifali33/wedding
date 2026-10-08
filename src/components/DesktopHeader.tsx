@@ -16,7 +16,7 @@ export const DesktopHeader: React.FC = () => {
     { name: "Venue", href: "/venue" },
     { name: "RSVP", href: "/rsvp" },
     { name: "Contact", href: "/contact" },
-    { name: "Owner of App", href: "/owner" },
+    { name: "Owner", href: "/owner" },
   ];
 
   return (
